@@ -1,34 +1,48 @@
-Natural Gas Storage & Forward Price Simulation
+Natural Gas Price Forecast – JPM Quant Simulation
 
-This project explores how seasonal storage patterns influence natural-gas forward pricing. It’s based on a quantitative simulation originally built for a JP Morgan virtual experience, then refined into a clearer, self-contained notebook.
+This project replicates a simplified quant-style workflow for forecasting natural gas storage and forward prices. It uses historical EIA storage data and spot prices to estimate seasonal patterns, evaluate deviations from normal behavior, and generate a forward-looking storage distribution similar to what real quant research teams produce.
 
-* The workflow uses historical spot prices and storage data to:
+What the Project Does
 
-* Model seasonality and cyclical inventory behavior
+* Loads and cleans natural gas storage and price data
 
-* Estimate how storage deviations impact pricing pressure
+* Calculates year-over-year seasonal patterns
 
-* Generate 12-month forward price paths
+* Flags storage deviations relative to historical norms
 
-* Visualize scenarios that mirror common risk-management and research workflows
+* Models next-12-month storage levels using Monte Carlo-style sampling
 
-The notebook stays focused on practical interpretation, not over-engineering. It shows the logic behind each step, the reasoning for parameter choices, and the effects those choices have on projected outcomes.
+* Generates a forecast curve for expected prices based on simulated storage
+
+* Provides clear visualizations inside the notebook
+
+How It Helps With Analysis
+
+* Translates messy EIA storage data into interpretable signals
+
+* Shows how storage shocks cascade into pricing expectations
+
+* Gives a structured example of a quant research workflow
+
+* Demonstrates time-series thinking, scenario modeling, and forecast evaluation
 
 Files Included
+
 ```
 jpmorgan-natgas-forecast/
 │
 ├── JPM_NatGas_Storage_Model.ipynb   # Main simulation + visualizations
 └── Nat_Gas.csv                      # Historical sample data
 ```
+
 Skills Demonstrated
 
-* Time-series decomposition
+* Python
 
-* Seasonality modeling
+* Time Series Analysis
 
-* Forward-curve construction
+* Forecasting & Modeling
 
-* Scenario simulation
+* Data Cleaning
 
-* Quantitative reasoning and clear analytical documentation
+* Quantitative Research
